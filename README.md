@@ -12,6 +12,7 @@ This is the repository, where i store a lot of the problems that I created for v
 - backtrack: Backtracking algorithms
 - tree: Tree algorithms (tree data structures + iteration over them)
 - graph: Graph algorithms (graph data structures + iteration over them)
+- math: Translation of mathematical formulas into code
 
 
 ### Names of algorithms:
@@ -24,8 +25,8 @@ This is the repository, where i store a lot of the problems that I created for v
 - Ssort: Selection Sort
 
 #### search
-- LinearSearch
-- BinarySearch
+- linear: Linear Search
+- binary: BinarySearch
 
 #### backtrack
 - general
@@ -33,19 +34,22 @@ This is the repository, where i store a lot of the problems that I created for v
 - Permutation: Permutation Algorithms
 
 #### tree
-- BinTree: Binary Tree
-- BinSearchTree: Binary Search Tree
-- AVLtree: AVL tree
-- Btree: B tree
-- DFSonTrees
-- BFSonTrees
+- BT: Binary Tree
+- BST: Binary Search Tree
+- AVL: AVL-Tree
+- BTree: B-Tree
+- DFSonTrees: DFS on tree
+- BFSonTrees: BFS on tree
 
 #### graph
-- DFSonGraphs
-- BFSonGraphs
+- DFSonGraphs: DFS on graph
+- BFSonGraphs: BFS on graph
+
+#### math
+- babylon: Babylonian Root Finding method
 
 
 ### programming languages:
 - C
-- Python
-- Pseudo
+- PY: Python
+- PSEUDO: Pseudo code
