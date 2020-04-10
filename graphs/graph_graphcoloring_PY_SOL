@@ -1,13 +1,11 @@
-# Based on architecture by Divyanshu Mehta, applied to IntroCS by Maximilian Harl
-
-class Graph():
+class Graph(object):
 
     def __init__(self, vertices, adjacency_matrix):
         self.v = len(adjacency_matrix)
         self.graph = adjacency_matrix
 
     # check: does any neigbor of v have the same color?
-    def colorPossible(self, v, colour, c):
+    def colorPossible(self, v, colour, c) -> bool:
         for i in range(self.v):
             if self.graph[v][i] == 1 and colour[i] == c:
                 return False
@@ -20,9 +18,9 @@ class Graph():
             return True
 
         for c in range(1, m + 1):
-            if self.colorPossible(v, color_idx, c) == True:
+            if self.colorPossible(v, color_idx, c) is True:
                 color_idx[v] = c
-                if self.colorGraphHelper(m, color_idx, v + 1) == True:
+                if self.colorGraphHelper(m, color_idx, v + 1) is True:
                     return True
                 color_idx[v] = 0
         return False
@@ -30,7 +28,7 @@ class Graph():
     def colorGraph(self, colors):
         # auxilary data structure - is filled recursively
         color_idxs = [0] * self.v
-        if self.colorGraphHelper(len(colors), color_idxs, 0) == False:
+        if self.colorGraphHelper(len(colors), color_idxs, 0) is False:
             print("Sadly, there is no solution to this graph.")
             return False
         else:
